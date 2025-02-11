@@ -29,6 +29,18 @@ exports.getUsers = async(req, res) => {
     }
 };
 
+exports.getUserById = async(req, res) => {
+    try{
+        const user = await User.findById(req.params.id);
+        if(!user) {
+            return res.status(404).send({message: 'Usuário não encontrado'})
+        }
+        res.status(200).send(user) 
+    } catch (err){
+        res.status(404).send({message: 'Usuário não encontrado'});
+    }
+}
+
 exports.updateUser = async (req, res) => {
     try {
         const user = await User.findByIdAndUpdate(req.params.id, req.body, {new: true});
