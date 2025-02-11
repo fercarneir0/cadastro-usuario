@@ -40,4 +40,16 @@ exports.updateUser = async (req, res) => {
         console.error("Erro ao atualizar o usuário", err);
         res.status(400).send({message: 'Não foi possível atualizar o usuário'})
     }
+};
+
+exports.deleteUser = async (req, res) => {
+    try{
+        const user = await User.findByIdAndDelete(req.params.id);
+        if(!user){
+            return res.status(404).send({message: 'Usuário não encontrado'})
+        }
+        res.send(user);
+    } catch (err){
+        res.status(400).send({message: 'Não foi possível remover o usuário'})
+    }
 }
