@@ -8,10 +8,6 @@ app.use("/api", userRoutes)
 const port = 3000;
 mongoose.connect('mongodb+srv://devluisfernando12:gustavopasquasafadinha@cadastro.yox3l.mongodb.net/?retryWrites=true&w=majority&appName=cadastro')
 
-app.get('/', (req, res) => {
-    res.send("Hello World!")   
-});
-
 app.listen(port, () => {
     console.log(`Aplicacao escutando na porta ${port}`)
 });
