@@ -19,3 +19,12 @@ exports.CreateUser = async(req, res) =>  {
         res.status(400).send(err)
     }
 };
+
+exports.getUsers = async(req, res) => {
+    try {
+        const user = await User.find()
+        res.status(200).json(user)
+    } catch (err){
+        res.status(500).send({message: 'Não foi possivel listar os usuários'})
+    }
+}
