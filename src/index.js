@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require('express');
 const mongoose = require("mongoose");
 const userRoutes = require("./Routes/UserRoutes");
 
@@ -11,4 +11,3 @@ mongoose.connect('mongodb+srv://devluisfernando12:gustavopasquasafadinha@cadastr
 app.listen(port, () => {
     console.log(`Aplicacao escutando na porta ${port}`)
 });
-    
