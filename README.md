@@ -29,7 +29,7 @@ npm install
 
 ### 🛠 3. Configure as Variáveis de Ambiente
 
-Crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis:
+Crie um arquivo `.env` na raiz do projeto e adicione a seguinte variável:
 
 ```env
 MONGO_URI=mongodb+srv://...
