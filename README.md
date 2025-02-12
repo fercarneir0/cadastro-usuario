@@ -49,11 +49,11 @@ A aplicação estará rodando na porta `3000`.
 
 | Método | Rota | Descrição |
 |--------|------|-----------|
-| **POST** | `/api/usuarios` | Criar um novo usuário |
-| **GET** | `/api/usuarios` | Listar todos os usuários |
-| **GET** | `/api/usuarios/:id` | Obter um usuário por ID |
-| **PUT** | `/api/usuarios/:id` | Atualizar um usuário |
-| **DELETE** | `/api/usuarios/:id` | Excluir um usuário |
+| **POST** | `/api/users` | Criar um novo usuário |
+| **GET** | `/api/users` | Listar todos os usuários |
+| **GET** | `/api/users/:id` | Obter um usuário por ID |
+| **PUT** | `/api/users/:id` | Atualizar um usuário |
+| **DELETE** | `/api/users/:id` | Excluir um usuário |
 
 ---
 
